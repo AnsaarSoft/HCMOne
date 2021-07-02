@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ACHR.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EmpValueQuery" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BatchTransaction Working</Value>
+    </Setting>
+    <Setting Name="EmpValueReplaceID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[EMPID]</Value>
+    </Setting>
+    <Setting Name="RoundingValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Yes</Value>
+    </Setting>
+    <Setting Name="LoanNegative" Type="System.String" Scope="User">
+      <Value Profile="(Default)">No</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

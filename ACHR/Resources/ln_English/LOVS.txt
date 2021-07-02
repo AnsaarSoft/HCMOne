@@ -1,0 +1,3 @@
+Code	Desription	Group
+POB	Percentage of Basic	BasedOn
+POG	Percentage of Gross	BasedOn

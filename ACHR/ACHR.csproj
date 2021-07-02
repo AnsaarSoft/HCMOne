@@ -1,0 +1,1257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{711ABF4D-3308-4B78-8BEC-C9E24C737067}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACHR</RootNamespace>
+    <AssemblyName>ACHR</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Interop.CRAXDDRT, Version=10.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>obj\x86\Debug\Interop.CRAXDDRT.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CrystalActiveXReportViewerLib13">
+      <HintPath>obj\x86\Debug\Interop.CrystalActiveXReportViewerLib13.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.CrystalReportViewerExportLib">
+      <HintPath>obj\x86\Debug\Interop.CrystalReportViewerExportLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="mfmLicensing">
+      <HintPath>obj\x86\Debug\mfmLicensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>obj\x86\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UFFU">
+      <HintPath>obj\x86\Debug\UFFU.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\IntHrForm.cs" />
+    <Compile Include="Common\picker.cs" />
+    <Compile Include="Common\rptViewer.cs" />
+    <Compile Include="Common\UDClass.cs" />
+    <Compile Include="Common\UIMessages.cs" />
+    <Compile Include="Rpts\testRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>testRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screen\frm_360DegPerf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Access.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_AccrView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_AccrView.Designer.cs">
+      <DependentUpon>frm_AccrView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\frm_Advance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_AdvanceBatch.cs" />
+    <Compile Include="Screen\frm_AdvLnPay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_AdvncApr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_AdvncReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_AlertMgmt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ApprDesc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ApprDesc.Designer.cs">
+      <DependentUpon>frm_ApprDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\frm_ApprStage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ApprTamp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Assest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_AttAdj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_AttAdj.Designer.cs">
+      <DependentUpon>frm_AttAdj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\frm_AttendanceRules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_AttProcess.cs" />
+    <Compile Include="Screen\frm_BHcount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Bonus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_BonusAdj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpOTS.cs" />
+    <Compile Include="Screen\frm_FSN.cs" />
+    <Compile Include="Screen\frm_LeaveCalendar.cs" />
+    <Compile Include="Screen\frm_MstAttendanceAllow.cs" />
+    <Compile Include="Screen\frm_MstEmployeeBonus.cs" />
+    <Compile Include="Screen\frm_Branches.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_BtchCrea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_BtchCrea.Designer.cs">
+      <DependentUpon>frm_BtchCrea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\frm_BtchCreaSearch.cs" />
+    <Compile Include="Screen\frm_Calander.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_CancelLeaveReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Certif.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_CmptncyGrp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_CmptncyProf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Competancy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ConditionalDed.cs" />
+    <Compile Include="Screen\frm_Crit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_DBConn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_DeductionRules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_DeductionRulesEmployee.cs" />
+    <Compile Include="Screen\frm_DeductionRulesS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Dept.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Desg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_DT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_DT.Designer.cs">
+      <DependentUpon>frm_DT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\frm_DTN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EleSetup.cs" />
+    <Compile Include="Screen\frm_eMailSett.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpAttAlw.cs" />
+    <Compile Include="Screen\frm_EmpAttch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpElem.cs" />
+    <Compile Include="Screen\frm_EmpLev.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpMst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpMstE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpMstOpt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpMstP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_empMstPR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_empMstPR.Designer.cs">
+      <DependentUpon>frm_empMstPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\frm_EmpMstQ.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpMstR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpNoLateAlw.cs" />
+    <Compile Include="Screen\frm_empOverTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpPN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpPosition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EmpRef.cs" />
+    <Compile Include="Screen\frm_EmpTrns.cs" />
+    <Compile Include="Screen\frm_EPPR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_EPPRTrns.cs" />
+    <Compile Include="Screen\frm_EWD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Expense.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_FBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_fromSrch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_FS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_FSAppr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_GLAcctDetComp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_GLAcctDetDept.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_GLAcctDetLoc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_GracePerRules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Gratuity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_GratuitySlabs.cs" />
+    <Compile Include="Screen\frm_HolDates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Increment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_MstShift.cs" />
+    <Compile Include="Screen\frm_PRElem.cs" />
+    <Compile Include="Screen\frm_PRElemTran.cs" />
+    <Compile Include="Screen\frm_ShftSch.cs" />
+    <Compile Include="Screen\frm_ShiftDays.cs" />
+    <Compile Include="Screen\frm_InstMstr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_InterviewCall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_IntEvlSelection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ItemsSearch.cs" />
+    <Compile Include="Screen\frm_JobDesg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_JobPosting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_JobTitle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_KPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Language.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_LeaveDed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_LeaveEncash.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_LeaveRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_LevDed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_LevType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Loan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_LoanApr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_LoanPay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_LoanReqTex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_LoanRequest.cs" />
+    <Compile Include="Screen\frm_Locations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_mATT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_MstSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_MstSearchEAS.cs" />
+    <Compile Include="Screen\frm_MstSearchGrautity.cs" />
+    <Compile Include="Screen\frm_MstSearchOTSlab.cs" />
+    <Compile Include="Screen\frm_NAttPost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_NAttProcess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Notific.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_NShftSch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_NViewShiftSch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_OBAdj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_OccpType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_OpenSAdj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_OpnBal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_OTSetup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_OTSlabs.cs" />
+    <Compile Include="Screen\frm_PayrollIni.cs" />
+    <Compile Include="Screen\frm_PayrollSetup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Penalty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_PerfAprsl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_PerfAsmnt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_PerfPlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_PerfPrdConf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_PrfCen.cs" />
+    <Compile Include="Screen\frm_ProcCan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Processing.cs" />
+    <Compile Include="Screen\frm_ProfMem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_PromAdvc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Qualif.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_RecgMstr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_RefPay.cs" />
+    <Compile Include="Screen\frm_ReHireEmp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ReHireEmpn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_RelMstr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Reports.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Reports.Designer.cs">
+      <DependentUpon>frm_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\frm_RepotViewerSett.cs" />
+    <Compile Include="Screen\frm_ResAprv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ResReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_RetroPay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_RetroSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Role.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_SalAdj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Search.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Settings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ShftSchTex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ShftSchV.cs" />
+    <Compile Include="Screen\frm_ShowReports1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Skills.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_SLCan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_SpecDays.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_switch.cs" />
+    <Compile Include="Screen\frm_TAttPost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_TAttProcess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_TaxAdj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_Team.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_TestFrm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ToSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_TrnsEmployeeBonus.cs" />
+    <Compile Include="Screen\frm_TViewShiftSch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_TxSetup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_userAuth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_VacReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_VacStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_VacType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_VAttAdj.cs" />
+    <Compile Include="Screen\frm_VAttPost.cs" />
+    <Compile Include="Screen\frm_VAttProcess.cs" />
+    <Compile Include="Screen\frm_ViewAdvncReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ViewEmpPen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ViewLeaveReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ViewLoanRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_ViewShiftSch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\frm_VViewShiftSch.cs" />
+    <Compile Include="Screen\frm_WebView.cs" />
+    <Compile Include="Screen\HRMSBaseForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\rpt_Viewer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screen\rpt_Viewer.Designer.cs">
+      <DependentUpon>rpt_Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frmExportAndMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frmExportAndMail.Designer.cs">
+      <DependentUpon>frmExportAndMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinForms\frmRptViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\frmRptViewer.Designer.cs">
+      <DependentUpon>frmRptViewer.cs</DependentUpon>
+    </Compile>
+    <None Include="Msgs.res">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <EmbeddedResource Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Resources\32\Msgs.resx" />
+    <EmbeddedResource Include="Resources\ln_English\Msgs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpts\rptSalarySheet.rpt" />
+    <EmbeddedResource Include="Rpts\rptSlip.rpt" />
+    <EmbeddedResource Include="Rpts\rptSlipN.rpt" />
+    <EmbeddedResource Include="Rpts\SalarySlip_ABC.rpt" />
+    <EmbeddedResource Include="Rpts\ActiveEmployeeList.rpt" />
+    <EmbeddedResource Include="Rpts\AllActiveAdvance.rpt" />
+    <EmbeddedResource Include="Rpts\AllActiveLoans.rpt" />
+    <EmbeddedResource Include="Rpts\AllEmployeeList.rpt" />
+    <EmbeddedResource Include="Rpts\DepartAttendanceSumary.rpt" />
+    <EmbeddedResource Include="Rpts\EmpJoiningReport.rpt" />
+    <EmbeddedResource Include="Rpts\EmployeeLoanSummary.rpt" />
+    <EmbeddedResource Include="Rpts\EmpResig.rpt" />
+    <EmbeddedResource Include="Rpts\EmployeeAdvanceSummary.rpt" />
+    <EmbeddedResource Include="Rpts\PaymentAdvice.rpt" />
+    <EmbeddedResource Include="Rpts\rptContributionSheet.rpt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Rpts\testRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>testRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scripts\s34.sql" />
+    <EmbeddedResource Include="Scripts\s37.sql" />
+    <EmbeddedResource Include="Scripts\s40.sql" />
+    <EmbeddedResource Include="WinForms\frmExportAndMail.resx">
+      <DependentUpon>frmExportAndMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\frmRptViewer.resx">
+      <DependentUpon>frmRptViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Advance.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ApprTamp.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Loan.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PayrollSetup.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\TaxMargins.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_TxSetup.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\TimeMachine.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Objects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPbobsCOM">
+      <Guid>{FC8030BE-F5D2-4B8E-8F92-44228FE30090}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAPbouiCOM">
+      <Guid>{6048236A-956D-498D-A6F1-9C81C13AB6E8}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Settings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_TestFrm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpPosition.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Branches.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Certif.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_HolDates.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_InstMstr.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_JobDesg.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_JobTitle.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_KPI.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Language.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LevType.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_OccpType.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ProfMem.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Qualif.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_RecgMstr.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_RelMstr.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Role.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_SalaryYear.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Team.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_VacStatus.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_VacType.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_eMailSett.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Bonus.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Expense.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_OpnBal.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Gratuity.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LevDed.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ApprStage.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_CmptncyGrp.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PerfAsmnt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_GLAcctDetComp.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_OTSetup.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpMst.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LeaveDed.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_360DegPerf.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_CmptncyProf.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PerfAprsl.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PerfPlan.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PerfPrdConf.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PromAdvc.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_GLAcctDetLoc.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_GLAcctDetDept.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Calander.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_BHcount.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_empOverTime.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_AdvncReq.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EWD.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LoanRequest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ResReq.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_AlertMgmt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ApprDesc.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_FBuilder.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_AccrView.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_BtchCrea.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_RetroSet.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Increment.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_RetroPay.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Processing.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_FS.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\PayrollMenu.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_InterviewCall.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_IntEvlSelection.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_JobPosting.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LeaveRequest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_AdvncApr.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LoanApr.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LoanPay.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ReHireEmp.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ResAprv.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Notific.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_AttProcess.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_AttendanceRules.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_GracePerRules.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ProcCan.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_SLCan.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_VacReq.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_DeductionRules.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CFL.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Payroll.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_MstShift.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Locations.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Dept.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Desg.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_MstSearch.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\32\xml_mATT.xml" />
+    <Content Include="XMLScreen\ln_English\xml_EmployeeBonus.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LeaveCalendar.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_FSN.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PRElem.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PRElemTran.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_TrnsEmployeeBonus.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpTrns.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ShftSch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_MstAttendanceAllow.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ShiftDays.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_RepotViewerSett.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_WebView.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpNoLateAlw.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpAttAlw.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpMstOpt.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PayrollIni.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpOTS.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_MstSearchEAS.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_MstSearchOTSlab.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_OTSlabs.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EleSetup.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpLev.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EPPR.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpElem.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_switch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_RefPay.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpRef.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_MstSearchGrautity.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_GratuitySlabs.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_VViewShiftSch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_VAttAdj.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_VAttPost.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_VAttProcess.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ShftSchV.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_PrfCen.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EPPRTrns.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ItemsSearch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_TAttPost.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ReHireEmpn.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LoanReqTex.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_TAttProcess.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_TViewShiftSch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ShftSchTex.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_DTN.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_mATT.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_OpenSAdj.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_SalAdj.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_TaxAdj.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpAttch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ViewEmpPen.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_NViewShiftSch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_SpecDays.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_NAttPost.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_NShftSch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_NAttProcess.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpPN.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Penalty.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpMstQ.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpMstP.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpMstE.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_EmpMstR.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_LeaveEncash.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_MstSearch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_fromSrch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ToSearch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Search.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Skills.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ShowReports1.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ViewAdvncReq.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ViewLoanRequest.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_FSAppr.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ViewShiftSch.xml" />
+    <EmbeddedResource Include="Scripts\s35.sql" />
+    <EmbeddedResource Include="Scripts\s36.sql" />
+    <EmbeddedResource Include="Scripts\s45.sql" />
+    <EmbeddedResource Include="Scripts\s42.sql" />
+    <Content Include="Resources\ln_English\LOVS.txt" />
+    <EmbeddedResource Include="Scripts\s50.sql" />
+    <EmbeddedResource Include="Scripts\s51.sql" />
+    <EmbeddedResource Include="Scripts\s49.1.sql" />
+    <EmbeddedResource Include="Scripts\s49.2.sql" />
+    <EmbeddedResource Include="Scripts\s49.3.sql" />
+    <EmbeddedResource Include="Scripts\s49.4.sql" />
+    <EmbeddedResource Include="Scripts\s52.sql" />
+    <EmbeddedResource Include="Scripts\s52.1.sql" />
+    <EmbeddedResource Include="XMLScreen\32\PayrollMenu.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\32\xml_EmpMst.xml" />
+    <EmbeddedResource Include="Scripts\S54.1.sql" />
+    <EmbeddedResource Include="Scripts\S54.sql" />
+    <EmbeddedResource Include="XMLScreen\32\TaxMargins.xml" />
+    <EmbeddedResource Include="XMLScreen\32\TimeMachine.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_360DegPerf.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_AccrView.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Advance.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_AdvncApr.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_AdvncReq.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_AlertMgmt.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ApprDesc.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ApprStage.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ApprTamp.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_AttendanceRules.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_AttProcess.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_BHCount.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Bonus.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Branches.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_BtchCrea.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Calander.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Certif.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_CmptncyGrp.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_CmptncyProf.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_DBConn.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_DeductionRules.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Dept.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Desg.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_DMOld.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_DT.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_EleSetup.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_eMailSett.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_EmpElem.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_EmpLev.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_empMstPR.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_empOverTime.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_EmpPosition.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_EWD.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Expense.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_FBuilder.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_FS.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_FSAppr.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_GLAcctDetComp.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_GLAcctDetDept.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_GLAcctDetLoc.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_GracePerRules.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Gratuity.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_HolDates.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Increment.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_InstMstr.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_InterviewCall.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_IntEvlSelection.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_JobDesg.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_JobPosting.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_JobTitle.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_KPI.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Language.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_LeaveDed.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_LeaveRequest.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_LevDed.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_LevType.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Loan.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_LoanApr.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_LoanPay.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_LoanRequest.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Locations.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_MstShift.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Notific.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_OccpType.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_OpnBal.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_OTSetup.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_PayrollIni.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_PayrollSetup.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_PerfAprsl.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_PerfAsmnt.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_PerfPlan.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_PerfPrdConf.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ProcCan.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Processing.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ProfMem.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_PromAdvc.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Qualif.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_RecgMstr.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ReHireEmp.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_RelMstr.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Reports.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ResAprv.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ResReq.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_RetroPay.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_RetroSet.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Role.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Rpts.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_SalaryYear.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Settings.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ShftSch.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_SLCan.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Team.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_TestFrm.xml" />
+    <Content Include="Scripts\s54.2.sql" />
+    <Content Include="Scripts\s55.04.02.sql" />
+    <Content Include="Scripts\s55.05.01.sql" />
+    <Content Include="Scripts\s55.05.02.sql" />
+    <Content Include="Scripts\s55.05.03.sql" />
+    <Content Include="Scripts\s55.05.04.sql" />
+    <Content Include="Scripts\s55.07.sql" />
+    <Content Include="Scripts\s55.sql" />
+    <Content Include="Scripts\ScriptToAddMachineTypes.sql" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Assest.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_CancelLeaveReq.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Competancy.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Crit.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_LeaveEncash.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ShowReports1.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_Skills.xml" />
+    <EmbeddedResource Include="XMLScreen\32\PayrollMenuHR.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\32\PayrollMenuNoLic.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\32\xml_EmpMstOpt.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_FSN.xml" />
+    <Content Include="Scripts\SPCode\Clear Record CCGLClearRecords.sql" />
+    <Content Include="Scripts\SPCode\Create SP CCGLClearRecords.sql" />
+    <Content Include="XMLScreen\32\xml_TxSetup.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_userAuth.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_VacReq.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_VacStatus.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_VacType.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ViewLeaveReq.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ViewShiftSch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_CancelLeaveReq.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Competancy.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Assest.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Crit.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ViewAdvncReq.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ViewLoanRequest.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\PayrollMenuHR.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\PayrollMenuNoLic.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Access.xml" />
+    <EmbeddedResource Include="XMLScreen\32\xml_ViewEmpPen.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_AdvLnPay.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_AttAdj.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_BonusAdj.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_DeductionRulesS.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ConditionalDed.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_DBConn.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_BtchCreaSearch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_DeductionRulesEmployee.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_AdvanceBatch.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_MstEmployeeBonus.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="XMLScreen\ln_English\xml_DMOld.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Rpts.xml" />
+    <EmbeddedResource Include="Scripts\s31.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_Reports.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_ViewLeaveReq.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_DT.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_empMstPR.xml" />
+    <EmbeddedResource Include="XMLScreen\ln_English\xml_userAuth.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DIHRMS\DIHRMS.csproj">
+      <Project>{1F3EDA02-963E-4CF1-8F29-CB070C3D6633}</Project>
+      <Name>DIHRMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

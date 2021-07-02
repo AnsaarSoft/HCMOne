@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConError" xml:space="preserve">
+    <value>Error in Connecting to SBO</value>
+  </data>
+  <data name="dbError_TCR" xml:space="preserve">
+    <value>Error in Creating Table</value>
+  </data>
+  <data name="xception" xml:space="preserve">
+    <value>Error :</value>
+  </data>
+  <data name="Nev_Rec_First" xml:space="preserve">
+    <value>Reached to First record</value>
+    <comment>Ubaid</comment>
+  </data>
+  <data name="Nev_Rec_Last" xml:space="preserve">
+    <value>Reached to Last Record</value>
+    <comment>Ubaid</comment>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Err_Required" xml:space="preserve">
+    <value>Please provide the required data</value>
+    <comment>Ubaid</comment>
+  </data>
+  <data name="Err_EmpDID" xml:space="preserve">
+    <value>Employee ID Already Exist</value>
+    <comment>Faisal</comment>
+  </data>
+  <data name="Inf_EmpID" xml:space="preserve">
+    <value>You can't left Employee ID Field Empty</value>
+    <comment>Faisal</comment>
+  </data>
+  <data name="Err_DateComparison" xml:space="preserve">
+    <value>End Date must be greater than or equal to Start Date</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_DupRecord" xml:space="preserve">
+    <value>Cannot Add Duplicate Records</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_ExistCode" xml:space="preserve">
+    <value>Code Already Exist</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_ExistDesc" xml:space="preserve">
+    <value>Description Already Exist</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_ExistDtRange" xml:space="preserve">
+    <value>Specifed Period Alredy Exist</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_ExistEmployee" xml:space="preserve">
+    <value>Employee Already Exist In DataBase</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_ExistGroupID" xml:space="preserve">
+    <value>Group ID Already Exist</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_ExistKeyObj" xml:space="preserve">
+    <value>Key Prerformance Objective Already Exist</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_ExistName" xml:space="preserve">
+    <value>Name Already Exist</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_ExistPoints" xml:space="preserve">
+    <value>Entered Points Alreday Exist</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_InvalidFormat" xml:space="preserve">
+    <value>Invalid Time Format : Time Format Should be like '23:59'</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_MandatoryFields" xml:space="preserve">
+    <value>Select Mandatory Fields</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NoRecord" xml:space="preserve">
+    <value>No Record To Display</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullAprslNo" xml:space="preserve">
+    <value>Select Appraisal No.</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullAprsrCode" xml:space="preserve">
+    <value>Select Appraiser Code</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullCity" xml:space="preserve">
+    <value>City Cannot Be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullCmptncyGrp" xml:space="preserve">
+    <value>Select Competency Group</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullCode" xml:space="preserve">
+    <value>Code cannot Be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullCountry" xml:space="preserve">
+    <value>Country Cannot Be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullDate" xml:space="preserve">
+    <value>Start Date ,End Date Cannot be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullDedCode" xml:space="preserve">
+    <value>Deduction Code Cannot Be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullDesc" xml:space="preserve">
+    <value>Description Cannot Be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullDocDate" xml:space="preserve">
+    <value>Enter Document Date</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullEmployee" xml:space="preserve">
+    <value>Please Select Employee</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullFrmWeek" xml:space="preserve">
+    <value>Weekend From Not Selected</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullGroupID" xml:space="preserve">
+    <value>Group ID Cannot be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullHol" xml:space="preserve">
+    <value>Holiday Name Cannot Be Null</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullJobPos" xml:space="preserve">
+    <value>Job Postion Cannot Be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullKeyObj" xml:space="preserve">
+    <value>Key Prformance Objective Cannot be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullLagKPI" xml:space="preserve">
+    <value>Laggigng KPI Cannot be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullLedKPI" xml:space="preserve">
+    <value>Leading LPI Cannot be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullLevType" xml:space="preserve">
+    <value>Leave Type Cannot Be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullLinMngr" xml:space="preserve">
+    <value>Select Line Manager</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullMinExp" xml:space="preserve">
+    <value>Minimum Experience Cannot Be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullName" xml:space="preserve">
+    <value>Name Cannot Be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullOtTyp" xml:space="preserve">
+    <value>Overtime Type Cannot Be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullPlanNo" xml:space="preserve">
+    <value>Select Performance Plan No.</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullPoints" xml:space="preserve">
+    <value>Points Cannot be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullPrntDesg" xml:space="preserve">
+    <value>Parent Designation Cannot be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullProfileStatus" xml:space="preserve">
+    <value>Select Profile Status</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullSeries" xml:space="preserve">
+    <value>Select Series</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullShiftEnd" xml:space="preserve">
+    <value>Shift End Time Cannot Be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullShiftST" xml:space="preserve">
+    <value>Shift Start Time Cannot Be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullShiftTyp" xml:space="preserve">
+    <value>Shift Type Cannot Be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullStatus" xml:space="preserve">
+    <value>Status Cannot be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullToWeek" xml:space="preserve">
+    <value>Weekend To Not Selected</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullType" xml:space="preserve">
+    <value>Deduction Type Cannot Be Left Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="Err_NullWorldRank" xml:space="preserve">
+    <value>World Rank Cannot Be Empty</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="War_DelRow" xml:space="preserve">
+    <value>This will Delete Record from Database, Do you want to Delete Record</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="War_SelectRow" xml:space="preserve">
+    <value>No Row Selected, Please Select Row to Delete</value>
+    <comment>Salman</comment>
+  </data>
+  <data name="ValidationFailed" xml:space="preserve">
+    <value>Valdiation Failed</value>
+    <comment>Ubaid</comment>
+  </data>
+  <data name="Err_DateCheck" xml:space="preserve">
+    <value>Document Date Must be Less than or Equal to Company Date</value>
+    <comment>Salman</comment>
+  </data>
+</root>
