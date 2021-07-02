@@ -178,6 +178,7 @@
     <Compile Include="Screen\frm_BonusAdj.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Screen\frm_EmpAtch.cs" />
     <Compile Include="Screen\frm_EmpOTS.cs" />
     <Compile Include="Screen\frm_FSN.cs" />
     <Compile Include="Screen\frm_LeaveCalendar.cs" />
@@ -934,6 +935,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="XMLScreen\32\xml_mATT.xml" />
+    <Content Include="XMLScreen\ln_English\xml_EmpAtch.xml" />
     <Content Include="XMLScreen\ln_English\xml_EmployeeBonus.xml" />
     <EmbeddedResource Include="XMLScreen\ln_English\xml_LeaveCalendar.xml" />
     <EmbeddedResource Include="XMLScreen\ln_English\xml_FSN.xml" />
